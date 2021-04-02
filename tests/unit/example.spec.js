@@ -1,12 +1,10 @@
-import { shallowMount } from "@vue/test-utils";
-import HelloWorld from "@/components/HelloWorld.vue";
+import process from "@/assets/decimal-standard";
 
-describe("HelloWorld.vue", () => {
-  it("renders props.msg when passed", () => {
-    const msg = "new message";
-    const wrapper = shallowMount(HelloWorld, {
-      propsData: { msg },
-    });
-    expect(wrapper.text()).toMatch(msg);
+describe("decimal-standard", () => {
+  it("", () => {
+    expect(typeof process).toBe("function");
   });
 });
+
+
+
